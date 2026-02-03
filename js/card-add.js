@@ -137,15 +137,15 @@ document.addEventListener("DOMContentLoaded", async function () {
   });
 
   // // Telegram Web App interfeysiga murojaat qilamiz
-  // const telegramWebApp = window.Telegram.WebApp;
+  const telegramWebApp = window.Telegram.WebApp;
 
   // // Telegram Web App buttonini sozlash
-  // telegramWebApp.ready();
-  // telegramWebApp.MainButton.setText("Tasdiqlash");
-  // telegramWebApp.MainButton.show();
-  // telegramWebApp.MainButton.onClick(async function () {
-  //   await submitForm();
-  // });
+  telegramWebApp.ready();
+  telegramWebApp.MainButton.setText("Tasdiqlash");
+  telegramWebApp.MainButton.show();
+  telegramWebApp.MainButton.onClick(async function () {
+    await submitForm();
+  });
   if (window.Telegram && window.Telegram.WebApp) {
     const telegramWebApp = window.Telegram.WebApp;
     telegramWebApp.expand(); // **Web App'ni to'liq ekran qilish**
