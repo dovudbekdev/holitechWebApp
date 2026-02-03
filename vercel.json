@@ -1,0 +1,61 @@
+{
+    "version": 2,
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/card.html",
+            "dest": "/card.html"
+        },
+        {
+            "src": "/subscription",
+            "dest": "/subscription.html"
+        },
+        {
+            "src": "/verify.html",
+            "dest": "/verify.html"
+        },
+        {
+            "src": "/success.html",
+            "dest": "/success.html"
+        },
+        {
+            "src": "/error.html",
+            "dest": "/error.html"
+        },
+        {
+            "src": "/card-add.html",
+            "dest": "/card-add.html"
+        },
+        {
+            "src": "/obuna.html",
+            "dest": "/obuna.html"
+        },
+        {
+            "src": "/verify2.html",
+            "dest": "/verify2.html"
+        },
+        {
+            "src": "/succes2.html",
+            "dest": "/succes2.html"
+        },
+        {
+            "src": "/style/styles.css",
+            "dest": "/style/styles.css"
+        },
+        {
+            "src": "/js/main.js",
+            "dest": "/js/main.js"
+        },
+        {
+            "src": "/js/index.js",
+            "dest": "/js/index.js"
+        },
+        {
+            "src": "/js/verify.js",
+            "dest": "/js/verify.js"
+        }
+    ]
+}

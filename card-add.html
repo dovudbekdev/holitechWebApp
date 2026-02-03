@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To'lov</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
+  <body>
+    <div id="startPage" class="page loading_block">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div id="addCardPage" class="page active">
+      <div class="modal">
+        <form id="addCardForm" class="form">
+          <div class="separator" style="display: flex; justify-content: center">
+            <p style="text-align: center; width: 100%; font-size: 24px">
+              Bank kartasi ma'lumotlarini kiriting
+            </p>
+          </div>
+          <div class="card-info">
+            <div class="input_container">
+              <label class="input_label">Karta raqami</label>
+              <input
+                class="input_field"
+                id="cardNumber"
+                type="text"
+                name="cardNumber"
+                placeholder="0000 0000 0000 0000"
+                maxlength="19"
+                minlength="19"
+                required
+              />
+            </div>
+            <div class="input_container">
+              <label class="input_label">Amal qilish muddati</label>
+              <input
+                class="input_field"
+                id="expiryDate"
+                type="text"
+                name="expiryDate"
+                placeholder="MM/YY"
+                maxlength="5"
+                required
+              />
+            </div>
+          </div>
+
+          <div id="errorInfo" class="error-info-card"></div>
+
+          <div
+            class="paymentother"
+            style="
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              width: auto;
+            "
+          >
+            <img src="/img/payme.png" alt="" style="width: 50%" />
+          </div>
+          <div style="display: flex; flex-direction: column">
+            <div
+              class="paymentother"
+              style="
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                width: auto;
+              "
+            >
+              To'lov faqatgina Uzcard va Humo kartalari orqali amalga
+              oshiriladi.
+            </div>
+            <div
+              class="paymentother"
+              style="
+                text-align: center;
+                justify-content: center;
+                display: block;
+                width: auto;
+                margin-bottom: 10px;
+              "
+            >
+              Xavfsizlik maqsadida sizning bank kartangiz ma'lumotlari PayMe
+              xizmatining serverlarida saqlanadi. Obuna xizmati sizning
+              shaxsingizga oid hechqanday ma'lumot saqlamaydi.
+              <a href="https://cdn.payme.uz/terms/ru/main.html"
+                >Payme ofertasi</a
+              >
+            </div>
+            <div
+              class="paymentother"
+              style="
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                width: auto;
+              "
+            >
+              Powered by Payme
+            </div>
+          </div>
+          <button
+            class="checkout"
+            type="button"
+            style="cursor: pointer; display: none"
+          >
+            <span>Tasdiqlash kodini olish</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/card-add.js"></script>
+  </body>
+</html>
